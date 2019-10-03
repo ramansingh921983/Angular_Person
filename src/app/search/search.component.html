@@ -1,0 +1,29 @@
+<div class="container">
+  
+  <form (ngSubmit)="search()" #todoForm="ngForm">
+    <fieldset class="form-group">
+      <label>Search</label>
+      <input type="text" 
+            [(ngModel)]="test" class="form-control" 
+                name="description" required="required" minlength="3">
+    </fieldset>
+
+   
+    <button type="submit" class="btn btn-success">Search</button>
+  </form>  
+  
+  
+  <div *ngIf="success">
+  
+  
+  {{person.firstName}}
+  
+  
+    {{person.lastName}}
+
+	
+    {{person.age}}
+
+  </div>
+
+</div>
